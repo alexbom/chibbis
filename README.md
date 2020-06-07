@@ -10,6 +10,14 @@ http://tihoemesto.ru/files/chibbis/
 
 ## Quick start
 
+1. **Install the Gatsby CLI**
+
+    ```shell
+    npm install -g gatsby-cli
+    ```
+   
+   The above command installs Gatsby CLI globally on your machine.
+
 1.  **Develop**
 
     Navigate into your new site’s directory and start the development environment.
@@ -20,7 +28,7 @@ http://tihoemesto.ru/files/chibbis/
 
     Your site is now running at `http://localhost:8000`
 
-2.  **Build**
+1.  **Build**
 
     Get an optimized production build for your site generating static HTML and JavaScript, CSS bundles.
 
@@ -28,7 +36,7 @@ http://tihoemesto.ru/files/chibbis/
     gatsby build
     ```
 
-3.  **Serve**
+1.  **Serve**
 
     Starts a local server for testing your production site.
 
