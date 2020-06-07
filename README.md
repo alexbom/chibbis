@@ -1,10 +1,10 @@
-# Gatsby Redux-Toolkit Typescript Starter
+# Chibbis test task
 
-This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using [Redux-Toolkit](https://redux-toolkit.js.org/), [Typescript](https://www.typescriptlang.org/), [Styled Components](https://styled-components.com/), [Talwind CSS](https://tailwindcss.com/) & [React Font Awesome](https://github.com/FortAwesome/react-fontawesome).
+https://docs.google.com/document/d/1L8AGJwQXXIzxsPEH25-yaiULsn2KLqX3Xd7-WFi_P5I
 
 ## Demo
 
-[Gatsby Redux-Toolkit Typescript Starter](https://gatsby-redux-toolkit-typescript.netlify.com/)
+http://tihoemesto.ru/files/chibbis/
 
 ## Quick start
 
@@ -43,9 +43,3 @@ This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using [Redux-
     ```
 
     Your production site is now running at `http://localhost:9000`
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/saimirkapaj/gatsby-redux-toolkit-typescript-starter)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/saimirkapaj/gatsby-redux-toolkit-typescript-starter)
