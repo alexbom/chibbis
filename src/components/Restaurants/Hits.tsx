@@ -1,9 +1,8 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 
 import { IHit } from '../../config/definitions';
-import { restaurantSelector } from '../../state/restaurant';
 import Icon from '../../utils/Icon';
+import { useData } from '../../hooks/useData';
 import {
   HitsItem, HitsItemContent, HitsItemDescr, HitsItemImage, HitsItemMain,
   HitsItemName, HitsItemPrice, SectionTitle, HitsWrapper, EmptyResult
@@ -13,7 +12,7 @@ import {
  * Hits component
  */
 const Hits: React.FC = () => {
-  const { hits } = useSelector(restaurantSelector);
+  const { hits } = useData();
 
   return (
     <>

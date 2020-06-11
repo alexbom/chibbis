@@ -1,8 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import store, { Dispatch, RootState, Thunk } from 'state/store';
+import { RootState } from 'state/store';
 
 import { FilterEnum, IHit, IRestaurant, IReview } from '../../config/definitions';
-import { GET_HITS, GET_RESTAURANTS, GET_REVIEWS } from '../../config/constants';
 
 interface RestaurantState {
   search: string;
@@ -60,7 +59,7 @@ export const restaurantSelector = (state: RootState) => state.restaurant;
 const { setSearch, toggleFilter, setRestaurants, setHits, setReviews } = restaurantSlice.actions;
 
 // Thunks
-export const getRestaurants = (): Thunk => (dispatch: Dispatch) => {
+/*export const getRestaurants = (): Thunk => (dispatch: Dispatch) => {
   (async function() {
     const { restaurants } = store.getState().restaurant;
 
@@ -97,6 +96,6 @@ export const getReviews = (): Thunk => (dispatch: Dispatch) => {
       dispatch(setReviews(newReviews));
     }
   })();
-};
+};*/
 
 export { setRestaurants, setHits, setReviews, setSearch, toggleFilter };

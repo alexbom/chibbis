@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 import { restaurantSelector } from '../../state/restaurant';
 import { findRestaurants } from '../../helpers/restaurant';
+import { useData } from '../../hooks/useData';
 import Icon from '../../utils/Icon';
 import { getPercent } from '../../helpers/utils';
 import {
@@ -15,7 +16,8 @@ import {
  * List component
  */
 const List: React.FC = () => {
-  const { restaurants, search, filters } = useSelector(restaurantSelector);
+  const { restaurants } = useData();
+  const { search, filters } = useSelector(restaurantSelector);
   const items = findRestaurants(restaurants, search, filters);
 
   return (

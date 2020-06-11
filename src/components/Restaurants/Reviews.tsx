@@ -1,10 +1,9 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 
 import { IReview } from '../../config/definitions';
-import { restaurantSelector } from '../../state/restaurant';
 import { dateFormat } from '../../helpers/utils';
 import Icon from '../../utils/Icon';
+import { useData } from '../../hooks/useData';
 import {
   SectionTitle, ReviewsListItem, ReviewsListItemTitle,
   ReviewsListItemMessage, ReviewsListItemDate, EmptyResult, ListWrapper
@@ -14,7 +13,7 @@ import {
  * Reviews component
  */
 const Reviews: React.FC = () => {
-  const { reviews } = useSelector(restaurantSelector);
+  const { reviews } = useData();
 
   return (
     <>

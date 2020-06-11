@@ -14,60 +14,16 @@ import { Main, Wrapper } from './styles';
 /**
  * Restaurants component
  */
-const Restaurants: React.FC = () => {
-  const dispatch = useDispatch();
-  const data = useStaticQuery(graphql`
-    query {
-      api {
-        restaurants {
-          Name
-          Logo
-          MinCost
-          DeliveryCost
-          DeliveryTime
-          PositiveReviews
-          ReviewsCount
-          Specializations {
-            Name
-          }
-        }
-        hits {
-          ProductName
-          ProductImage
-          ProductPrice
-          ProductDescription
-          RestaurantId
-          RestaurantName
-          RestaurantLogo
-        }
-        reviews {
-          IsPositive
-          Message
-          DateAdded
-          UserFIO
-          RestaurantName
-        }
-      }
-    }
-  `);
-
-  useEffect(() => {
-    dispatch(setRestaurants(data.api.restaurants));
-    dispatch(setHits(data.api.hits));
-    dispatch(setReviews(data.api.reviews));
-  }, []);
-
-  return (
-    <Wrapper>
-      <Filter />
-      <Main>
-        <Search />
-        <List />
-        <Hits />
-        <Reviews />
-      </Main>
-    </Wrapper>
-  );
-};
+const Restaurants: React.FC = () => (
+  <Wrapper>
+    <Filter />
+    <Main>
+      <Search />
+      <List />
+      <Hits />
+      <Reviews />
+    </Main>
+  </Wrapper>
+);
 
 export default Restaurants;
